@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amaan Mirza - Devloper Portfolio </title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 21px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #45c9ce;
+}
+
+.logo {
+    color: #45c9ce;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8%;
+    background: linear-gradient(135deg, black, rgb(119, 119, 223));
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero span {
+    color: #45c9ce;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #45c9ce;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.left{
+    font-size: 20px;
+    color: #45c9ce;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #45c9ce;
+}
+
+.skill-box span {
+    display: inline-block;
+    background: black;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skill-box span:hover {
+    background: #45c9ce;
+    color: black;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #45c9ce;
+    color: black;
+}
+
+.imgSection{
+
+    width: 50%; ;
+    text-align: right;
+}
+
+.imgSection img{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Amaan Mirza's Portfolio </div>
+            <div class="right">
+                <ul>
+             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="content">
+        <h1>Hi, I'm <span>Amaan Mirza</span></h1>
+        <p>Python & Django Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="imgSection">
+            <img src="am.png" alt="Amaan image">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer focused on building real-world projects using Python and Django.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <span>Python</span>
+            <span>Django</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="card">
+                <h3>Student Management System</h3>
+                <p>CRUD based project built in Python.</p>
+            </div>
+
+            <div class="card">
+                <h3>Quiz App</h3>
+                <p>Interactive console-based quiz application.</p>
+       b      </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ammirxaa@gmail.com</p>
+        <p>LinkedIn: www.linkedin.com/in/amaan-mirza-9306a93ab</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Amaan Mirza | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
